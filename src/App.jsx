@@ -1,7 +1,8 @@
+import Mainrouter from "./components/MainRouter";
 
 function App() {
   return (
-    <div>hola</div>
+    <Mainrouter/>
   );
 }
 

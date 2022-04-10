@@ -10,7 +10,7 @@ function Mainrouter () {
       <Routes>
         <Route path={HOME_ROUTE} element="{<Home />} "/>
         <Route path={PRODUCT_DETAILS} element="{<CreatePerson />}" />
-        <Route path={ABOUT} element="{}" />
+        <Route path={ABOUT} element="{alexander}" />
       </Routes>
     </BrowserRouter>
   );
