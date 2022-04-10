@@ -1,0 +1,10 @@
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(52, 54, 54);
+  height: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: aliceblue;
+}
