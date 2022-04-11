@@ -1,3 +1,8 @@
+.loading {
+  display: grid;
+  place-content: center;
+  height: 90vh;
+}
 @keyframes ldio-t9wpln7epg {
   0% {
     transform: rotate(0);

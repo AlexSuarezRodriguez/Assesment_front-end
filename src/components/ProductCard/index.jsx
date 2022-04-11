@@ -30,19 +30,23 @@ function ProductCard(props) {
     <div className="card-tarjeta">
       <img src={image} alt={title} />
       <p>{title}</p>
-      <Countdown
-        date={Date.now() + 60000 * randomNumber}
-        onComplete={handleOnComplete}
-        intervalDelay={1000}
-      />
+      <div className="card-tarjeta_product">
+        <Countdown
+          date={Date.now() + 60000 * randomNumber}
+          onComplete={handleOnComplete}
+          intervalDelay={1000}
+        />
 
-      <Link
-        className={isActive ? 'active' : 'deactive'}
-        to={`${PRODUCT_DETAILS}/${id}`}
-        onClick={handleLinkClick}
-      >
-        Go details
-      </Link>
+        <Link
+          className={isActive ? 'active' : 'deactive'}
+          to={`${PRODUCT_DETAILS}/${id}`}
+          onClick={handleLinkClick}
+        >
+          Go details
+        </Link>
+
+      </div>
+
     </div>
   );
 }
