@@ -16,6 +16,7 @@ export const fetchProduct = () => async (dispatch) => {
     console.log(error);
   }
 };
+
 export const fetchOneProduct = (id) => async (dispatch) => {
   try {
     const product = await getOneProducts(id);
