@@ -1,0 +1,7 @@
+.card-tarjeta .active {
+  color: green;
+}
+.card-tarjeta .deactive {
+  color: blue;
+  pointer-events: none;
+}
