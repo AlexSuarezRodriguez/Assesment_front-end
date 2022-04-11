@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import ProductCard from '../../components/ProductCard';
 import { fetchProduct } from '../../store/actions';
+import Loading from '../../components/Loading';
 
 function Home() {
   const products = useSelector((state) => state.products);
@@ -21,6 +22,7 @@ function Home() {
           image={product.image}
         />
       ))}
+      <Loading />
     </div>
   );
 }
