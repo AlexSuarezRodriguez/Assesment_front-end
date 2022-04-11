@@ -1,8 +1,8 @@
-import Mainrouter from "./components/MainRouter";
+import Mainrouter from './components/MainRouter';
 
 function App() {
   return (
-    <Mainrouter/>
+    <Mainrouter />
   );
 }
 
