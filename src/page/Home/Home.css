@@ -1,0 +1,13 @@
+.contenedor {
+  display: grid;
+  place-content: center;
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin: 0 auto;
+}
+.contenedor img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
