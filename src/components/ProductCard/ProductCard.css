@@ -1,0 +1,26 @@
+.card-tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid rgb(131, 127, 127);
+  padding: 10px;
+}
+.card-tarjeta_product {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-tarjeta .active {
+  color: green;
+}
+.card-tarjeta .deactive {
+  color: blue;
+  pointer-events: none;
+}
+.card-tarjeta a {
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: aquamarine;
+}

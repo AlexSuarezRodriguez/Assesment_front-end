@@ -5,6 +5,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   margin: 0 auto;
+  gap: 1rem;
 }
 .contenedor img {
   height: 150px;
