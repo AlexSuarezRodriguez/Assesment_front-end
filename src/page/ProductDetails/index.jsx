@@ -1,16 +1,22 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { fetchOneProduct } from '../../store/actions';
 import Loading from '../../components/Loading';
 import './ProductDetail.css';
 
 function ProductDetails() {
   const [load, setLoad] = useState(true);
   const product = useSelector((state) => state.oneProduct);
+  const dispatch = useDispatch();
+  const params = useParams();
 
   useEffect(() => {
+    dispatch(fetchOneProduct(params.id));
     setTimeout(() => {
       setLoad(false);
-    }, 5000);
+    }, 2000);
   }, []);
 
   const {
@@ -23,13 +29,12 @@ function ProductDetails() {
   } = product;
 
   return (
-    <div>
+    <>
       {load
         ? <Loading />
         : (
-
-          <div className="contendor_p">
-            <div className="contendor_image_pro">
+          <main className="contendor">
+            <div className="contendor_image">
               <img src={image} alt={title} />
             </div>
             <div className="contendorTexto">
@@ -39,16 +44,36 @@ function ProductDetails() {
               <div className="contendorTexto__parrafo">
                 <div>
                   <p>{description}</p>
-                  <p>{category}</p>
-                  <p>{price}</p>
-                  <p>{rate}</p>
-                  <p>{count}</p>
+                  <p>
+                    category:
+                    {category}
+                  </p>
+                  <p>
+                    price:
+                    {price}
+                  </p>
+                  <div className="stats-pro">
+                    <div className="stat-pro">
+                      <p>
+                        rate:
+                        <br />
+                        {rate}
+                      </p>
+                    </div>
+                    <div className="stat-pro">
+                      <p>
+                        count:
+                        <br />
+                        {count}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </main>
         )}
-    </div>
+    </>
   );
 }
 

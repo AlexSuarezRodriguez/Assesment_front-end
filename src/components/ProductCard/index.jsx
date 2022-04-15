@@ -35,14 +35,14 @@ function ProductCard(props) {
         <p>{title}</p>
       </div>
       <div className="stats">
-        <div className="stat">
+        <div className="stat count">
           <Countdown
             date={Date.now() + 60000 * randomNumber}
             onComplete={handleOnComplete}
             intervalDelay={1000}
           />
         </div>
-        <div className="stat">
+        <div className="stat ">
           <Link
             className={isActive ? 'active' : 'deactive'}
             to={`${PRODUCT_DETAILS}/${id}`}

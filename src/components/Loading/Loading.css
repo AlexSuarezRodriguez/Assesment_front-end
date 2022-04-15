@@ -24,7 +24,7 @@
   height: 180.48px;
   border: 23.04px solid;
   border-radius: 50%;
-  border-color: transparent #e15b64 #e15b64 #e15b64;
+  border-color: transparent #fff200 #fff200 #fff200;
   box-sizing: border-box;
   position: absolute;
   transform: rotate(45deg);
@@ -40,7 +40,7 @@
   width: 0;
   height: 0;
   border: 23.04px solid;
-  border-color: transparent transparent transparent #e15b64;
+  border-color: transparent transparent transparent #fff200;
   transform: translate(96px, -5.76px);
 }
 .loadingio-spinner-reload-50kyj31xuud {
