@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Loading from '../../components/Loading';
+import './ProductDetail.css';
 
 function ProductDetails() {
   const [load, setLoad] = useState(true);
@@ -9,7 +10,7 @@ function ProductDetails() {
   useEffect(() => {
     setTimeout(() => {
       setLoad(false);
-    }, 1000);
+    }, 5000);
   }, []);
 
   const {
@@ -26,19 +27,25 @@ function ProductDetails() {
       {load
         ? <Loading />
         : (
-          <div>
-            {title}
-            ,
-            {price}
-            ,
-            {category}
-            ,
-            {description}
-            ,
-            {rate}
-            ,
-            {count}
-            <img src={image} alt="fgv" />
+
+          <div className="contendor_p">
+            <div className="contendor_image_pro">
+              <img src={image} alt={title} />
+            </div>
+            <div className="contendorTexto">
+              <div className="contendorTexto__titulo">
+                {title}
+              </div>
+              <div className="contendorTexto__parrafo">
+                <div>
+                  <p>{description}</p>
+                  <p>{category}</p>
+                  <p>{price}</p>
+                  <p>{rate}</p>
+                  <p>{count}</p>
+                </div>
+              </div>
+            </div>
           </div>
         )}
     </div>

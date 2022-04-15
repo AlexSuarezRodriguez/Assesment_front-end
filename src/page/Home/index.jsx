@@ -18,12 +18,12 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="backgorund">
       {
       load
         ? (<Loading />)
         : (
-          <div className="contenedor">
+          <div className="card-container">
             {
               products.map((product) => (
                 <ProductCard

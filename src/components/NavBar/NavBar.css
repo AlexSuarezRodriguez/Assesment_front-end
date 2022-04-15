@@ -2,7 +2,9 @@ nav {
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(52, 54, 54);
-  height: 2rem;
+  height: 4rem;
+  font-size: 2.5rem;
+  position: relative;
 }
 nav a {
   text-decoration: none;

@@ -27,23 +27,30 @@ function ProductCard(props) {
   };
 
   return (
-    <div className="card-tarjeta">
-      <img src={image} alt={title} />
-      <p>{title}</p>
-      <div className="card-tarjeta_product">
-        <Countdown
-          date={Date.now() + 60000 * randomNumber}
-          onComplete={handleOnComplete}
-          intervalDelay={1000}
-        />
-
-        <Link
-          className={isActive ? 'active' : 'deactive'}
-          to={`${PRODUCT_DETAILS}/${id}`}
-          onClick={handleLinkClick}
-        >
-          Go details
-        </Link>
+    <div className="card">
+      <div className="card-image">
+        <img src={image} alt={title} />
+      </div>
+      <div className="card-text">
+        <p>{title}</p>
+      </div>
+      <div className="stats">
+        <div className="stat">
+          <Countdown
+            date={Date.now() + 60000 * randomNumber}
+            onComplete={handleOnComplete}
+            intervalDelay={1000}
+          />
+        </div>
+        <div className="stat">
+          <Link
+            className={isActive ? 'active' : 'deactive'}
+            to={`${PRODUCT_DETAILS}/${id}`}
+            onClick={handleLinkClick}
+          >
+            Go details
+          </Link>
+        </div>
 
       </div>
 

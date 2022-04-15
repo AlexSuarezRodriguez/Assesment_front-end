@@ -1,4 +1,55 @@
-.contenedor {
+html {
+  font-size: 62.5%;
+}
+:root {
+  --color-amarillo-primary: #f5af19;
+  --color-morado-secundary: #f5af;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.background {
+  background-size: cover;
+  background-position: bottom;
+  width: 1200px;
+  margin: 0 auto;
+}
+.card-container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 4rem;
+  min-width: 50%;
+  height: 60vh;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .background {
+    background-image: none;
+  }
+  .card-container {
+    flex-wrap: wrap;
+  }
+  .card {
+    height: 60rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-image img {
+    margin-top: -4rem;
+  }
+  .card-container {
+    padding: 1rem;
+  }
+  .card {
+    min-width: 30rem;
+    width: 30rem;
+  }
+}
+/* .contenedor {
   display: grid;
   place-content: center;
   width: 80%;
@@ -11,4 +62,4 @@
   height: 150px;
   width: 150px;
   object-fit: contain;
-}
+} */
