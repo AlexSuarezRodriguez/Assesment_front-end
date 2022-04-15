@@ -1,0 +1,51 @@
+.contenedor_perfil {
+  width: 800px;
+  margin: 0 auto;
+}
+.header {
+  text-align: center;
+  height: 220px;
+  padding: 5rem;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLytAJbGlHiC2JTpfZ6gDB-xTAg9OhVOyqA&usqp=CAU");
+}
+.header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.header h1 {
+  font-size: 18px;
+  margin-top: 14px;
+  color: #fff;
+}
+.enlaces {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.enlaces li {
+  display: inline-block;
+  margin: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(68, 59, 59);
+}
+.about {
+  padding: 10px;
+}
+.about h3 {
+  color: #545454;
+  font-size: 15px;
+}
+.about p {
+  color: #545454;
+  font-size: 14px;
+}
+.information,
+ul li {
+  font-size: 20px;
+}
