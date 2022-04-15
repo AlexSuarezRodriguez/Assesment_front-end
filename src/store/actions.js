@@ -14,7 +14,7 @@ export const fetchProduct = () => async (dispatch) => {
     const products = await getAllProducts();
     dispatch(getProducts(products));
   } catch (error) {
-    console.log(error);
+    throw new Error(error);
   }
 };
 
@@ -23,6 +23,6 @@ export const fetchOneProduct = (id) => async (dispatch) => {
     const product = await getOneProducts(id);
     dispatch(showOneProduct(product));
   } catch (error) {
-    console.log(error);
+    throw new Error(error);
   }
 };
