@@ -35,6 +35,8 @@ function Perfil() {
           objetivos,con el deseo de siempre aprender para lograr dar lo mejor y
           apoyar cuando lo sea necesario .
         </h3>
+      </div>
+      <div className="information">
         <ul>
           {' '}
           <b>conceptos aprendidos</b>
@@ -64,7 +66,6 @@ function Perfil() {
           </li>
           <li>entender como funciona las bases de datos relacionales</li>
         </ul>
-        <p> </p>
       </div>
     </div>
   );
